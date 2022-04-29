@@ -23,5 +23,6 @@ urlpatterns = [
 
     #incluimos las urls de la app persona
     path('', include('applications.persona.urls')),
-    
+
+    path('', include('applications.home.urls')),
 ]
