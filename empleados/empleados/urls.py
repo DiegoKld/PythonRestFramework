@@ -25,4 +25,6 @@ urlpatterns = [
     path('', include('applications.persona.urls')),
 
     path('', include('applications.home.urls')),
+
+    path('', include('applications.persona.urls')),
 ]
