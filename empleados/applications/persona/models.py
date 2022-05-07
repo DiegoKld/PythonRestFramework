@@ -2,6 +2,7 @@ from distutils.command.upload import upload
 from django.db import models
 from django.forms import ImageField
 from applications.departamento.models import Departamento
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -37,6 +38,7 @@ class Empleado(models.Model):
     departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE)
     #vatar = models.ImageField(upload_to='empleado', height_field=None, width_field=None, max_length=None)
     habilidades = models.ManyToManyField(Habilidades)
+    hoja_vida = RichTextField()
 
     class Meta:
         verbose_name='Personal de la empresa'

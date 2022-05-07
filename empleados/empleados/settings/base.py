@@ -24,10 +24,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Apps de terceros
+    'ckeditor',
     #local apps
     'applications.departamento',
     'applications.persona',
     'applications.home',
+    
 ]
 
 MIDDLEWARE = [
