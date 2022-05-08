@@ -1,14 +1,9 @@
 <h1>Lista de todos los empleados</h1>
 
-******************* {{ object_list }} ******************* 
-
-{% for elemento in object_list %}
-
-   <p>
-
-        {{ elemento.first_name }} - {{ elemento.last_name }}
-        <br>
-        {{ elemento.job }}
-   </p> 
-
-{% endfor %}
+<ul>
+   
+   {% for e in object_list %}
+      <li>{{ e }}</li>
+   {% endfor %}
+         
+</ul>
